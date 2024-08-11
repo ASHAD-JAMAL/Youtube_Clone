@@ -15,14 +15,14 @@ import { SiTrendmicro } from "react-icons/si";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { PiFilmSlateLight } from "react-icons/pi";
 import { CgMediaLive } from "react-icons/cg";
-import { SiYoutubegaming } from "react-icons/si";
+// import { SiYoutubegaming } from "react-icons/si";
 import { FaRegNewspaper } from "react-icons/fa";
 import { TfiCup } from "react-icons/tfi";
 import { PiLightbulbLight } from "react-icons/pi";
 import { SiStylelint } from "react-icons/si";
 import { MdPodcasts } from "react-icons/md";
 import { BiVideo } from "react-icons/bi";
-import { GiLinkedRings } from "react-icons/gi";
+// import { GiLinkedRings } from "react-icons/gi";
 
 function Sidebar() {
   const sidebarItems = [
@@ -127,7 +127,7 @@ function Sidebar() {
     },
     {
       id: 11,
-      name: "Padcasts",
+      name: "Podcasts",
       icon: <MdPodcasts />,
     },
   ];
@@ -154,7 +154,7 @@ function Sidebar() {
     },
   ];
   return (
-    <div className="px-6 w-[15%] h-[calc(100vh-6.625rem)] overflow-y-scroll overflow-x-hidden">
+    <div className="px-6 w-[15%] h-[calc(100vh-6.625rem)] overflow-y-scroll overflow-x-hidden mt-16">
       {/* Home  */}
       <div className="space-y-3 items-center">
         {sidebarItems.map((item) => {
@@ -201,6 +201,33 @@ function Sidebar() {
       </div>
       <br />
       <hr />
+
+      {/* More Section  */}
+      <div className="mt-4 space-y-3 items-center">
+        <div className="items-center spacx-2">
+          <h1 className="font-semibold">More From Youtube</h1>
+        </div>
+        {sidebarItems4.map((item) => {
+          return (
+            <div className="flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1">
+              <div className="text-xl cursor-pointer text-red-800">
+                {item.icon}
+              </div>
+              <span className="cursor-pointer">{item.name}</span>
+            </div>
+          );
+        })}
+        <hr />
+      </div>
+      <br />
+      <span className="text-xs font-semibold text-gray-600">
+        About Press Copyright<br />Contact us Creator<br />Advertise
+        Developers <br /><br />
+        <p>TermsPrivacyPolicy & Safety <br /> How YouTube works <br />Test new features</p>
+      </span>
+      <br />
+      <p className="text-xs text-gray-800 mt-1">© 2024 Google LLC
+      </p>
     </div>
   );
 }
