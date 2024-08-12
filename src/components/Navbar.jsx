@@ -2,7 +2,7 @@ import React from "react";
 import Avatar from "react-avatar";
 import { AiOutlineMenu } from "react-icons/ai";
 import { CiSearch } from "react-icons/ci";
-import logo from "/public/logo.png";
+import logo from "/logo.png";
 import { IoMdMic } from "react-icons/io";
 import { RiVideoAddLine } from "react-icons/ri";
 import { AiOutlineBell } from "react-icons/ai";
